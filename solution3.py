@@ -28,11 +28,6 @@ def generator(samples, batch_size=33):
 			images = []
 			measurements = []
 			for batch_sample in batch_samples:
-				"""current_path = batch_sample[0]					
-				image = cv2.imread(current_path)				
-				measurement = float(line[3])	
-				images.append(image)				
-				measurements.append(measurement)"""
 				for i in range(3):
 					current_path = batch_sample[i]					
 					image = cv2.imread(current_path)					
@@ -62,31 +57,6 @@ from keras.layers import Convolution2D, Dropout, Cropping2D
 from keras.layers.advanced_activations import ELU
 from keras.regularizers import l2
 
-"""
-# Trivial Model
-model = Sequential()
-model.add(Lambda(lambda x: x / 255.0 - 0.5, input_shape=(160,320,3)))
-model.add(Flatten(input_shape=(160,320,3)))
-model.add(Dense(1))
-"""
-"""
-# Comma.ai model
-model = Sequential()
-model.add(Lambda(lambda x: x / 255.0 - 0.5, input_shape=(160,320,3)))
-model.add(Cropping2D(cropping=((50,20), (0,0)), input_shape=(160,320,3)))
-model.add(Convolution2D(16, 8, 8, subsample=(4, 4), border_mode="same"))
-model.add(ELU())
-model.add(Convolution2D(32, 5, 5, subsample=(2, 2), border_mode="same"))
-model.add(ELU())
-model.add(Convolution2D(64, 5, 5, subsample=(2, 2), border_mode="same"))
-model.add(Flatten())
-model.add(Dropout(.2))
-model.add(ELU())
-model.add(Dense(512))
-model.add(Dropout(.5))
-model.add(ELU())
-model.add(Dense(1))
-"""
 """
 modified NVIDIA model
 """
