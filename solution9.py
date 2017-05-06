@@ -14,7 +14,7 @@ import matplotlib.image as mpimg
 
 samples = []
 samples = []
-with open('../data6/driving_log.csv') as csvfile:
+with open('../data1/driving_log.csv') as csvfile:
 	reader = csv.reader(csvfile)
 	for line in reader:
 		samples.append(line)
