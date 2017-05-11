@@ -12,7 +12,6 @@ The goals / steps of this project are the following:
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
 
-
 [//]: # (Image References)
 
 [image1]: ./examples/nvidia_model.JPG "Model Visualization"
@@ -26,6 +25,13 @@ The goals / steps of this project are the following:
 [image9]: ./examples/right_cam.JPG "R cam Image"
 [image10]: ./examples/original.JPG "Original Image"
 [image11]: ./examples/flipped.JPG "Flipped Image"
+[image12]: ./examples/driving_gif.GIF "Driving Autonomously"
+
+
+Results
+---
+![alt text][image12]
+
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
