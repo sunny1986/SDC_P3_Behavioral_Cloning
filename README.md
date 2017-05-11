@@ -25,7 +25,7 @@ The goals / steps of this project are the following:
 [image9]: ./examples/right_cam.JPG "R cam Image"
 [image10]: ./examples/original.JPG "Original Image"
 [image11]: ./examples/flipped.JPG "Flipped Image"
-[image12]: ./examples/driving_gif.GIF "Driving Autonomously"
+[image12]: ./examples/driving_gif.gif "Driving Autonomously"
 
 
 Results
